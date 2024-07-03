@@ -5,6 +5,6 @@
   <div>
     <%= link_to "Back to friends", friends_path, class: "btn btn-dark" %> |
     <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-secondary" %> |
-    <%= link_to "Destroy this friend", @friend, method: :delete, class: "btn btn-secondary" %>
+    <%= link_to "Destroy this friend", @friend, data: { turbo_method: :delete }, class: "btn btn-secondary" %>
   </div>
 </div>
